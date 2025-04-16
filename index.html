@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Under Maintenance | We'll Be Back Soon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+  
+  <!-- Animated Background -->
+  <div class="bg-animation" id="bgAnimation"></div>
+  
+  <!-- Main Container -->
+  <div class="container">
+    <div class="content">
+      <!-- Maintenance Animation -->
+      <div class="maintenance-animation">
+        <div class="server-rack">
+          <div class="server-panel"></div>
+          <div class="server-panel"></div>
+          <div class="server-panel"></div>
+          <div class="server-light"></div>
+        </div>
+        <div class="tool"><i class="fas fa-wrench"></i></div>
+        <div class="tool"><i class="fas fa-screwdriver"></i></div>
+        <div class="tool"><i class="fas fa-cog"></i></div>
+      </div>
+      
+      <h1 class="title">Under Maintenance</h1>
+      <p class="description">
+        We're performing scheduled maintenance to improve your experience. 
+        Our team is working diligently to bring everything back online.
+        Thank you for your patience!
+      </p>
+      
+      <div class="countdown" id="countdown">
+        <div class="countdown-item">
+          <div class="countdown-value" id="days">00</div>
+          <div class="countdown-label">Days</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-value" id="hours">00</div>
+          <div class="countdown-label">Hours</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-value" id="minutes">00</div>
+          <div class="countdown-label">Minutes</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-value" id="seconds">00</div>
+          <div class="countdown-label">Seconds</div>
+        </div>
+      </div>
+      
+      <form class="subscribe-form" id="subscribeForm">
+        <input type="email" class="email-input" placeholder="Enter your email for updates" required>
+        <button type="submit" class="subscribe-button">Notify Me</button>
+      </form>
+      
+      <a href="mailto:whisperingchevrons@gmail.com" class="contact-button">Contact Support</a>
+    </div>
+    
+    <div class="notification" id="notification"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
